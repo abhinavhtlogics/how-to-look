@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Saraswati Vidya Mandir Haripur</title>
+    <title>How to look</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">        
@@ -16,16 +16,13 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 
 	 <!-- Owl Carousel Assets -->
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet">
+   
 	
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all"> 
-
-  
+   
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>	
@@ -65,9 +62,9 @@
     .banner-sec figure img{width: 800px;height: 100px;}
     .banner-sec .btn:nth-child(1){height: 50px;width: 50px;border-radius: 50px;}
     .banner-sec .btn:nth-child(2){height: 50px;width: 50px;}
-    .banner-sec .btn:nth-child(3){height: 50px; width: 80px; border-radius: 50%;rotate: 90deg;}
-    .banner-sec .btn:nth-child(4){height: 50px;width: 80px;rotate: 90deg; }
-    .banner-sec .btn:nth-child(5){width: 100px;height: 50px;transform: skew(20deg);rotate: -90deg;}
+    .banner-sec .btn:nth-child(3){height: 50px; width: 50px; border-radius: 50%;}
+    .banner-sec .btn:nth-child(4){height: 50px;width: 50px;}
+    .banner-sec .btn:nth-child(5){width: 50px;height: 50px;}
     .how-to-look {
     position: relative;
 }
@@ -90,11 +87,11 @@
             <div class="banner">
 <div class="how-to-look">
                 <div class="banner-icons">
-                    <div class="icons btn" onclick="iconClick()"></div>
-                    <div class="icons btn" onclick="iconClick()"></div>
-                    <!-- <div class="icons btn" onclick="iconClick()"></div>
-                    <div class="icons btn" onclick="iconClick()"></div>
-                    <div class="icons btn" onclick="iconClick()"></div> -->
+                    <div class="icons btn" onclick="iconClick('images/doormat.png')" data-img="images/doormat.png"></div>
+                    <div class="icons btn" onclick="iconClick('images/doormat2.png')" data-img="images/doormat2.png"></div>
+                    <div class="icons btn" onclick="iconClick('images/doormat3.png')" data-img="images/doormat3.png"></div>
+                    <div class="icons btn" onclick="iconClick('images/doormat4.png')" data-img="images/doormat4.png"></div>
+                    <div class="icons btn" onclick="iconClick('images/doormat5.png')" data-img="images/doormat5.png"></div>
                 </div>
 
                 <canvas id="canvas" width="1110" height="650"></canvas>
@@ -137,12 +134,14 @@ newImage2.onload = () => {
 // Draw the image onto the context
 ctx.drawImage(newImage2, 280, 500, 600, 100);
 }
+//$(document).ready(function(){
 
-function iconClick() {
+function iconClick(img) {
   console.log('working');
 
+  
   let newImage2 = new Image();
-newImage2.src = 'images/doormat2.png'
+newImage2.src = img;
 
 // When it loads
 
@@ -150,6 +149,14 @@ newImage2.src = 'images/doormat2.png'
 ctx.drawImage(newImage2, 280, 500, 600, 100);
 
 }
+//});
+
+
+
+
+//  $(".canvas-icon").click(function(){
+//     var img=$(this).data('img');
+//   });
 
 </script>
 </html>
