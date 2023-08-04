@@ -48,7 +48,7 @@
             overflow: hidden;
          }
         
-        .banner-sec .banner-icons{bottom: 0;
+        .banner-sec .banner-icons{bottom: 0;  
     width: auto;
     left: 0;
     /* transform: rotate(90deg); */
@@ -137,16 +137,19 @@ ctx.drawImage(newImage2, 280, 500, 600, 100);
 //$(document).ready(function(){
 
 function iconClick(img) {
-  console.log('working');
+
+let canvas2 = document.getElementById('canvas');
+let ctx2 = canvas2.getContext('2d');
+    console.log('working');
 
   
   let newImage2 = new Image();
 newImage2.src = img;
-
+console.log(img);
 // When it loads
 
 // Draw the image onto the context
-ctx.drawImage(newImage2, 280, 500, 600, 100);
+ctx2.drawImage(newImage2, 280, 500, 600, 100);
 
 }
 //});
