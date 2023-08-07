@@ -4,7 +4,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>How to look</title>
-
+  <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+  
 <style>
 body{margin:0;}
 .wrapper{max-width:100%; margin:0 auto; position: relative; }
@@ -12,7 +14,7 @@ img{max-width:100%;}
   
   .banner-sec .banner-info{background-image: url(empty-living-room.jpg); background-attachment:scroll; background-repeat: no-repeat; background-position-y:68%; background-size: cover; min-height: 610px; position: relative;}
   .banner-sec .banner-icons .icons.active, .banner-sec .banner-icons .icons:active{background-image: none; outline: 0; -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125); box-shadow: inset 0 3px 5px rgba(0,0,0,.125);}
-  .banner-sec figure{position: absolute; left: 0; right: 0; margin: 0 auto; bottom: 20px; max-width: 500px;}
+  .banner-sec figure{position: absolute; left: -80px; right: 0; margin: 0 auto; bottom: 7px; max-width: 610px;}
   .banner-sec .figure-block{display:block;}
   .banner-sec .figure-none{display:none;}
   .banner-sec figure .triangle {}
@@ -23,36 +25,42 @@ img{max-width:100%;}
   .banner-sec .figure-block{display:block;}
   .banner-sec .figure-none{display:none;}
 
-  .style-menu .style-shape-icons,.style-menu .style-colour-icons{width: auto;  position: relative; background-color: #2c2723;padding: 10px 20px;}
-  .style-menu .style-shape-icons .box{display: flex;margin: 0 10px;position: relative;left: 25%;width: 55%;}
-  .style-menu .style-shape-icons .icons{ height: 50px; width: 50px; margin: 30px 40px;  cursor:pointer;}
-  .style-menu .style-shape-icons .icons:nth-child(1){height: 40px; width: 80px;border: 2px solid #fff;}
-  .style-menu .style-shape-icons .icons:nth-child(2){width:50px; height:50px; border: 2px solid #fff;}
-  .style-menu .style-shape-icons .icons:nth-child(3){width: 60px;height: 45px; border-radius: 50px;border: 2px solid #fff;}
-  .style-menu .style-shape-icons .icons:nth-child(4){border-radius: 50%;width: 100px;height: 50px;border: 2px solid #fff;}
-  .style-menu .style-shape-icons .icons:nth-child(5){width:45px; height:45px;rotate:45deg;border: 2px solid #fff;}
+  .style-menu .style-shape-icons,.style-menu .style-colour-icons{width: auto;  position: relative; background-color: #fff6f2;padding: 9px 20px;}
+  .style-menu .style-shape-icons .box{display: flex;position: relative;height: 95px;margin: 25px auto 0 ;width: 55%;}
+  .style-menu .style-shape-icons .icons{ height: 50px; width: 50px; margin: 1px 40px;  cursor:pointer;}
+  .style-menu .style-shape-icons .icons:nth-child(1){height: 70px; width: 100px;border: 5px solid #000;}
+  .style-menu .style-shape-icons .icons:nth-child(2){width:70px; height:70px; border: 5px solid #000;}
+  .style-menu .style-shape-icons .icons:nth-child(3){width:70px; height:70px; border-radius: 150px;border: 5px solid #000;}
+  .style-menu .style-shape-icons .icons:nth-child(4){border-radius: 50%;width: 100px;height: 70px;border: 5px solid #000;}
+  .style-menu .style-shape-icons .icons:nth-child(5){width:60px; height:60px;rotate:45deg;border: 5px solid #000;}
   .style-menu .style-head{background-color: #eed6b9;padding: 5px 0;text-align: center;}
  
 
   .style-menu .style-colour-icons .box{display: flex;margin: 0 10px;position: relative;left: 25%;width: 55%;}
-  .style-menu .style-colour-icons .icons{ height: 50px; width: 50px; margin: 30px 27px;  cursor:pointer;margin:30px auto;}
-  .style-menu .style-colour-icons .icons:nth-child(1){height: 50px; width: 50px; background-color: #eed6b9;}
-  .style-menu .style-colour-icons .icons:nth-child(2){background-color: white;}
-  .style-menu .style-colour-icons .icons:nth-child(3){background-color: #9f9f9f;}
-  .style-menu .style-colour-icons .icons:nth-child(4){background-color: #0f5d3f;}
-  .style-menu .style-colour-icons .icons:nth-child(5){background-color: #deff3a;}
-  .style-menu .style-head{background-color: #544c47;text-align: center;}
-  .style-menu .style-head .btn{color:#fff; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 500;padding: 10px 20px;margin: 0 10px; position: relative;cursor: pointer;background: none;border: 0;}
-  .style-menu .style-head .btn:hover{text-decoration: underline;}
+  .style-menu .style-colour-icons .icons{ height: 100px; width: 100px;  cursor:pointer;margin:10px auto;}
+  .style-menu .style-colour-icons .icons:nth-child(1){background: rgb(255,232,204);
+  background: linear-gradient(58deg, rgb(239 181 127) 0%, rgb(66 46 30) 11%, rgb(239 181 127) 37%, rgb(44 31 21) 59%, rgb(239 181 127) 84%);}
+  .style-menu .style-colour-icons .icons:nth-child(2){background: linear-gradient(45deg,#0000 calc(25%/3), #000000 0 calc(50%/3),#0000 0 calc(250%/3), #000000 0 calc(275%/3),#0000 0),linear-gradient( 45deg,#000000 calc(25%/3), #0000 0 calc(50%/3),#000000 0 25%, #0000 0 75%,#000000 0 calc(250%/3), #0000 0 calc(275%/3),#000000 0),linear-gradient(-45deg,#0000 calc(25%/3), #000000 0 calc(50%/3),#0000 0 calc(250%/3), #000000 0 calc(275%/3),#0000 0),linear-gradient(-45deg,#000000 calc(25%/3), #0000 0 calc(50%/3),#000000 0 25%, #0000 0 75%,#000000 0 calc(250%/3), #0000 0 calc(275%/3),#000000 0)#ffffff;
+  background-size: 64px 64px;background-position: 0 0, 32px  32px;
+}
+  .style-menu .style-colour-icons .icons:nth-child(3){background: rgb(255,255,255);
+background: linear-gradient(58deg, rgba(255,255,255,1) 0%, rgba(84,84,84,1) 11%, rgba(255,255,255,1) 37%, rgba(78,78,78,1) 59%, rgba(255,255,255,1) 84%);}
+  .style-menu .style-colour-icons .icons:nth-child(4){background: rgb(2,13,9);
+background: linear-gradient(58deg, rgba(2,13,9,1) 0%, rgba(15,93,63,1) 21%, rgba(2,14,10,1) 39%, rgba(15,93,63,1) 59%, rgba(6,34,23,1) 84%);}
+  .style-menu .style-colour-icons .icons:nth-child(5){background: rgb(23,25,8);
+background: linear-gradient(58deg, rgba(23,25,8,1) 0%, rgba(222,255,58,1) 22%, rgba(23,25,8,1) 39%, rgba(222,255,58,1) 59%, rgba(23,25,8,1) 84%);}
+  .style-menu .style-head{background-color: #202020;text-align: center;}
+  .style-menu .style-head .btn{font-size: 15px; color:#d6d6d6; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 400;padding: 4px 10px;margin: 0 10px; position: relative;cursor: pointer;background: none;border: 0;}
+  .style-menu .style-head .btn:hover{color: #fff; font-weight: 600;}
 
   
 @media (min-width: 320px) and (max-width: 480px) {
   .style-menu .style-shape-icons .box{align-items: center;}
-  .style-menu .style-shape-icons .icons:nth-child(1){height: 20px; width: 40px;border: 2px solid #fff;}
-  .style-menu .style-shape-icons .icons:nth-child(2){width:30px; height:30px; border: 2px solid #fff;}
-  .style-menu .style-shape-icons .icons:nth-child(3){border-radius: 50px;border: 2px solid #fff;}
-  .style-menu .style-shape-icons .icons:nth-child(4){border-radius: 50%;width: 50px;height: 30px;border: 2px solid #fff;}
-  .style-menu .style-shape-icons .icons:nth-child(5){width:30px; height:30px;rotate:45deg;border: 2px solid #fff;}
+  .style-menu .style-shape-icons .icons:nth-child(1){height: 20px; width: 40px;border: 2px solid #0000;}
+  .style-menu .style-shape-icons .icons:nth-child(2){width:30px; height:30px; border: 2px solid #000;}
+  .style-menu .style-shape-icons .icons:nth-child(3){border-radius: 50px;border: 2px solid #000;}
+  .style-menu .style-shape-icons .icons:nth-child(4){border-radius: 50%;width: 50px;height: 30px;border: 2px solid #000;}
+  .style-menu .style-shape-icons .icons:nth-child(5){width:30px; height:30px;rotate:45deg;border: 2px solid #000;}
     .style-menu .style-colour-icons .box {margin:0; left: 0;position:relative;width: 100%;}
     .style-menu .style-shape-icons .box {margin:0; left: 0;position: relative;width: 100%;}
     .banner-sec .banner-info{min-height: 350px; background-position: left center;}
@@ -64,11 +72,11 @@ img{max-width:100%;}
 @media (min-width: 481px) and (max-width: 767px) {
   
   .style-menu .style-shape-icons .box{align-items: center;}
-  .style-menu .style-shape-icons .icons:nth-child(1){height: 30px; width: 60px;border: 2px solid #fff;}
-  .style-menu .style-shape-icons .icons:nth-child(2){width:40px; height:40px; border: 2px solid #fff;}
-  .style-menu .style-shape-icons .icons:nth-child(3){width:40px; height:40px; border-radius: 50px;border: 2px solid #fff;}
-  .style-menu .style-shape-icons .icons:nth-child(4){border-radius: 50%;width: 50px;height: 30px;border: 2px solid #fff;}
-  .style-menu .style-shape-icons .icons:nth-child(5){width:30px; height:30px;rotate:45deg;border: 2px solid #fff;}
+  .style-menu .style-shape-icons .icons:nth-child(1){height: 30px; width: 60px;border: 2px solid #000;}
+  .style-menu .style-shape-icons .icons:nth-child(2){width:40px; height:40px; border: 2px solid #000;}
+  .style-menu .style-shape-icons .icons:nth-child(3){width:40px; height:40px; border-radius: 50px;border: 2px solid #000;}
+  .style-menu .style-shape-icons .icons:nth-child(4){border-radius: 50%;width: 50px;height: 30px;border: 2px solid #000;}
+  .style-menu .style-shape-icons .icons:nth-child(5){width:30px; height:30px;rotate:45deg;border: 2px solid #000;}
   .style-menu .style-colour-icons .box {margin:0; left: 0;position:relative;width: 100%;}
     .style-menu .style-shape-icons .box {margin:0; left: 0;position: relative;width: 100%;}
   .banner-sec .banner-info{min-height: 480px; background-position: left center;}
@@ -87,15 +95,13 @@ img{max-width:100%;}
   
 }
 </style>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 </head>
 
 <body>
 <section class="banner-sec">
   <div class="wrapper">
     <div class="banner-info">
-	  <figure class="figure-block"><img class="lozad" data-src="doormat-min.png" alt="" id="img"></figure>
+	  <figure class="figure-block"><img src="doormat-min.png" alt="" id="img"></figure>
 	  <!-- <figure class="figure-none"><img src="doormat2.png" alt=""></figure>
 	  <figure class="figure-none"><img src="doormat-b&w.png" alt=""></figure>
 	  <figure class="figure-none"><img src="doormat-green.png" alt=""></figure>
@@ -130,13 +136,10 @@ img{max-width:100%;}
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
 <script>
 
 $(document).ready(function(){
-
-    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-observer.observe();
-
     $(".shape").click(function(){
     
     // var img=$(this).data('img');
