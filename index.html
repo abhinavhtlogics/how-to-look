@@ -87,13 +87,15 @@ img{max-width:100%;}
   
 }
 </style>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 </head>
 
 <body>
 <section class="banner-sec">
   <div class="wrapper">
     <div class="banner-info">
-	  <figure class="figure-block"><img src="doormat-min.png" alt="" id="img"></figure>
+	  <figure class="figure-block"><img class="lozad" data-src="doormat-min.png" alt="" id="img"></figure>
 	  <!-- <figure class="figure-none"><img src="doormat2.png" alt=""></figure>
 	  <figure class="figure-none"><img src="doormat-b&w.png" alt=""></figure>
 	  <figure class="figure-none"><img src="doormat-green.png" alt=""></figure>
@@ -131,6 +133,10 @@ img{max-width:100%;}
 <script>
 
 $(document).ready(function(){
+
+    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
+
     $(".shape").click(function(){
     
     // var img=$(this).data('img');
