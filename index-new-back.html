@@ -11,7 +11,7 @@ body{margin:0;}
 .wrapper{max-width:100%; margin:0 auto; position: relative; }
 img{max-width:100%;}
   
-  .banner-sec .banner-info{background-image: url(empty-living-room.jpg); background-attachment:scroll; background-repeat: no-repeat; background-position-y:68%; background-size: cover; min-height: 610px; position: relative;}
+  .banner-sec .banner-info{background-image: url(empty-living-room.jpg); background-attachment:scroll; background-repeat: no-repeat; background-position-y:65%; background-size: cover; min-height: 650px; position: relative;}
   .banner-sec .banner-icons .icons.active, .banner-sec .banner-icons .icons:active{background-image: none; outline: 0; -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125); box-shadow: inset 0 3px 5px rgba(0,0,0,.125);}
   .banner-sec figure{position: absolute; left: 0; right: 0; margin: 0 auto; bottom: 20px; max-width: 500px;}
   .banner-sec .figure-block{display:block;}
@@ -24,31 +24,29 @@ img{max-width:100%;}
   .banner-sec .figure-block{display:block;}
   .banner-sec .figure-none{display:none;}
 
-  .style-menu .style-shape-icons,.style-menu .style-colour-icons{width: auto;  position: relative; background-color: #2c2723;padding: 10px 20px;}
-  .style-menu .style-shape-icons .box{display: flex;margin: 0 10px;position: relative;left: 25%;width: 50%;}
-  .style-menu .style-shape-icons .icons{ height: 50px; width: 50px; margin: 30px 40px;  cursor:pointer;}
-  .style-menu .style-shape-icons .icons:nth-child(1){height: 50px; width: 80px;border: 2px solid #fff;}
-  .style-menu .style-shape-icons .icons:nth-child(2){width:50px; height:50px; border: 2px solid #fff;}
-  .style-menu .style-shape-icons .icons:nth-child(3){border-radius: 50px;border: 2px solid #fff;}
-  .style-menu .style-shape-icons .icons:nth-child(4){border-radius: 50%;width: 100px;height: 50px;border: 2px solid #fff;}
-  .style-menu .style-shape-icons .icons:nth-child(5){width:50px; height:50px;rotate:45deg;border: 2px solid #fff;}
+  .style-menu .style-shape-icons{width: auto;  position: relative;display: flex; background-color: #e1e1e1;padding: 10px 20px;}
+  .style-menu .style-shape-icons .icons{ height: 50px; width: 50px; margin: 30px 27px;  cursor:pointer;margin:30px auto;}
+  .style-menu .style-shape-icons .icons:nth-child(1){height: 50px; width: 80px;border: 2px solid #000;}
+  .style-menu .style-shape-icons .icons:nth-child(2){width:50px; height:50px; border: 2px solid #000;}
+  .style-menu .style-shape-icons .icons:nth-child(3){border-radius: 50px;border: 2px solid #000;}
+  .style-menu .style-shape-icons .icons:nth-child(4){border-radius: 50%;width: 100px;height: 50px;border: 2px solid #000;}
+  .style-menu .style-shape-icons .icons:nth-child(5){width:50px; height:50px;rotate:45deg;border: 2px solid #000;}
   .style-menu .style-head{background-color: #eed6b9;padding: 5px 0;text-align: center;}
  
-
-  .style-menu .style-colour-icons .box{display: flex;margin: 0 10px;position: relative;left: 25%;width: 50%;}
+  .style-menu .style-colour-icons{width: auto;  position: relative;display: flex; background-color: #fff4e8;padding: 10px 20px;}
   .style-menu .style-colour-icons .icons{ height: 50px; width: 50px; margin: 30px 27px;  cursor:pointer;margin:30px auto;}
   .style-menu .style-colour-icons .icons:nth-child(1){height: 50px; width: 80px; background-color: #eed6b9;}
   .style-menu .style-colour-icons .icons:nth-child(2){background-color: white;}
   .style-menu .style-colour-icons .icons:nth-child(3){background-color: #9f9f9f;}
   .style-menu .style-colour-icons .icons:nth-child(4){background-color: #0f5d3f;}
   .style-menu .style-colour-icons .icons:nth-child(5){background-color: #deff3a;}
-  .style-menu .style-head{background-color: #544c47;text-align: center;}
+  .style-menu .style-head{background-color: #d6c6bb;text-align: center;}
   .style-menu .style-head .btn{color:#fff; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 500;padding: 10px 20px;margin: 0 10px; position: relative;cursor: pointer;background: none;border: 0;}
   .style-menu .style-head .btn:hover{text-decoration: underline;}
 
   
 @media (min-width: 320px) and (max-width: 480px) {
-  
+  .style-menu .style-shape-icons .icons:nth-child(1){width: 0 !important;height: 0;border-left: 20px solid transparent;border-right: 20px solid transparent;border-bottom: 40px solid #eed6b9;}
   .style-menu .style-shape-icons .icons:nth-child(4){border-radius: 50%;width: 55px !important;height: 45px;}
     .banner-sec .banner-info{min-height: 350px; background-position: left center;}
   .banner-sec figure img{object-fit: cover; object-position: bottom center; height: 55px; margin: 0 auto; display: block;}
@@ -58,7 +56,8 @@ img{max-width:100%;}
   
 @media (min-width: 481px) and (max-width: 767px) {
   
- 
+  .style-menu .style-shape-icons .icons:nth-child(1){width: 0 !important;height: 0;border-left: 20px solid transparent;border-right: 20px solid transparent;border-bottom: 40px solid #eed6b9;}
+    .style-menu .style-shape-icons .icons:nth-child(4){border-radius: 50%;width: 55px !important;height: 45px;}
   .banner-sec .banner-info{min-height: 480px; background-position: left center;}
   .banner-sec figure img{object-fit: cover; object-position: bottom center; height: 75px; margin: 0 auto; display: block;}
   .style-menu .style-shape-icons{left: 0px; top: 16%;}
@@ -92,23 +91,19 @@ img{max-width:100%;}
     <button class="btn" id="color">Colors</button>
     <button class="btn" id="shape">Shapes</button>
   </div>
-	<div class="style-shape-icons" style="display: none;" id="shape-div">
-    <div class="box">
-        <div class="icons btn shape" data-img="doormat-min.png" data-class="triangle"></div>
-        <div class="icons btn shape"  data-img="doormat2-min.png" data-class="square"></div>
-        <div class="icons btn shape"  data-img="doormat3-min.png" data-class="circle"></div>
-        <div class="icons btn shape" data-img="doormat4-min.png" data-class="ellipse"></div>
-        <div class="icons btn shape" data-img="doormat5-min.png" data-class="rombus"></div>
-    </div>
+	<div class="style-shape-icons" id="shape-div">
+    <div class="icons btn shape" data-img="doormat-min.png" data-class="triangle"></div>
+    <div class="icons btn shape"  data-img="doormat2-min.png" data-class="square"></div>
+    <div class="icons btn shape"  data-img="doormat3-min.png" data-class="circle"></div>
+    <div class="icons btn shape" data-img="doormat4-min.png" data-class="ellipse"></div>
+    <div class="icons btn shape" data-img="doormat5-min.png" data-class="rombus"></div>
 	</div>
-  <div class="style-colour-icons" id="color-div">
-    <div class="box">
-        <div class="icons btn color" data-img="doormat-min.png" data-class="triangle"></div>
-        <div class="icons btn color" data-img="doormat2-min.png" data-class="square"></div>
-        <div class="icons btn color" data-img="doormat3-min.png" data-class="circle"></div>
-        <div class="icons btn color" data-img="doormat4-min.png" data-class="ellipse"></div>
-        <div class="icons btn color" data-img="doormat5-min.png" data-class="rombus"></div>
-    </div>
+  <div class="style-colour-icons" style="display: none;" id="color-div">
+    <div class="icons btn color" data-img="doormat-min.png" data-class="triangle"></div>
+    <div class="icons btn color" data-img="doormat2-min.png" data-class="square"></div>
+    <div class="icons btn color" data-img="doormat3-min.png" data-class="circle"></div>
+    <div class="icons btn color" data-img="doormat4-min.png" data-class="ellipse"></div>
+    <div class="icons btn color" data-img="doormat5-min.png" data-class="rombus"></div>
 	</div>
 </section>
 
@@ -117,41 +112,41 @@ img{max-width:100%;}
 <script>
 
 $(document).ready(function(){
-    $(".shape").click(function(){
+  $(".shape").click(function(){
     
-    // var img=$(this).data('img');
-     var className=$(this).data('class');
-     $("#img").attr('class','');
-   //  $("#img").attr('src',img);
-     $("#img").addClass(className);
+   // var img=$(this).data('img');
+    var className=$(this).data('class');
+    $("#img").attr('class','');
+  //  $("#img").attr('src',img);
+    $("#img").addClass(className);
+    //console.log('working');
+  });
+
+
+  $(".color").click(function(){
+    
+     var img=$(this).data('img');
+    // var className=$(this).data('class');
+    // $("#img").attr('class','');
+    $("#img").attr('src',img);
+   //  $("#img").addClass(className);
      //console.log('working');
    });
- 
- 
-   $(".color").click(function(){
-     
-      var img=$(this).data('img');
-     // var className=$(this).data('class');
-     // $("#img").attr('class','');
-     $("#img").attr('src',img);
-    //  $("#img").addClass(className);
-      //console.log('working');
-    });
- 
- 
-   $("#color").click(function(e){
-     e.preventDefault();
-     
-     $("#color-div").show();
-     $("#shape-div").hide();
-   });
- 
-   $("#shape").click(function(e){
-     e.preventDefault();
-     
-     $("#color-div").hide();
-     $("#shape-div").show();
-   });
+
+
+  $("#color").click(function(e){
+    e.preventDefault();
+    
+    $("#color-div").show();
+    $("#shape-div").hide();
+  });
+
+  $("#shape").click(function(e){
+    e.preventDefault();
+    
+    $("#color-div").hide();
+    $("#shape-div").show();
+  });
 });
 
 </script>
